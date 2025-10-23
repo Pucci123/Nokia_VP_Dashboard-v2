@@ -24,20 +24,21 @@
 
     <!-- Top grid: PoD/PoP + RBT -->
     <section class="grid grid-cols-1 xl:grid-cols-2 gap-6">
-      <!-- PoD / PoP snapshot -->
+      <!-- Difference & Parity Snapshot -->
       <div class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
-        <h2 class="text-xl font-semibold tracking-tight">PoD / PoP Snapshot</h2>
-        <p class="text-gray-500 mt-1">PoP — Point of Parity: VPs are as good as the competition. PoD — Point of Difference: VPs are different (superior/inferior) from the competition.</p>
+        <h2 class="text-xl font-semibold tracking-tight">Difference &amp; Parity Snapshot</h2>
+        <p class="text-gray-500 mt-1">Point of Parity (PoP): value elements are as good as those provided by competitors.</p>
+        <p class="text-gray-500 mt-1">Point of Difference (PoD): elements that distinguish from next best alternative.</p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
           <div id="pod-card" class="rounded-2xl border border-gray-100 p-5 cursor-pointer hover:ring-1 hover:ring-indigo-200" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="pod-modal">
-            <p class="text-gray-500 text-sm">Nokia Points of Difference (PoD)</p>
+            <p class="text-gray-500 text-sm">Nokia Points of Difference</p>
             <p class="text-4xl font-semibold tracking-tight mt-1">~70%</p>
             <p class="text-gray-500 text-sm">High differentiation</p>
             <p class="text-xs text-indigo-600 mt-1">Click for insight</p>
           </div>
           <div id="pop-card" class="rounded-2xl border border-gray-100 p-5 cursor-pointer hover:ring-1 hover:ring-indigo-200" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="pop-modal">
-            <p class="text-gray-500 text-sm">Nokia Points of Parity (PoP)</p>
+            <p class="text-gray-500 text-sm">Nokia Points of Parity</p>
             <p class="text-4xl font-semibold tracking-tight mt-1">~30%</p>
             <p class="text-gray-500 text-sm">Common with peers</p>
             <p class="text-xs text-indigo-600 mt-1">Click for insight</p>
@@ -46,10 +47,10 @@
         </div>
       </div>
 
-      <!-- RBT snapshot -->
+      <!-- Resource Based Snapshot -->
       <div class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
-        <h2 class="text-xl font-semibold tracking-tight">RBT Snapshot</h2>
-        <p class="text-gray-500 mt-1">Firm‑based, Market‑based, and Mixed resource contributions</p>
+        <h2 class="text-xl font-semibold tracking-tight">Resource Based Snapshot</h2>
+        <p class="text-gray-500 mt-1">Utilization of internal/external resources to create competitive advantages</p>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
           <div id="rbt-firm-card" class="rounded-2xl border border-gray-100 p-5 text-center cursor-pointer hover:ring-1 hover:ring-indigo-200" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="firm-modal">
@@ -207,7 +208,7 @@
     <!-- PoD vs PoP -->
     <section class="grid grid-cols-1 lg:grid-cols-2 gap-6" hidden>
       <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
-        <h2 class="text-xl font-semibold tracking-tight">Nokia Points of Difference (PoD)</h2>
+        <h2 class="text-xl font-semibold tracking-tight">Nokia Points of Difference</h2>
         <ul class="list-disc pl-5 mt-3 space-y-1 text-sm leading-6 text-gray-700">
           <li>Defense‑in‑depth across IP/optical/application layers.</li>
           <li>Standards leadership and compliance (NIST, ETSI, IETF, FIPS).</li>
@@ -216,7 +217,7 @@
         <p class="text-sm text-gray-700 mt-3"><span class="font-bold">Summary:</span> Nokia's quantum‑safe differentiation is built on its proven, multi‑layered defense architecture, validated by industry‑first certifications and over 100 live deployments across critical infrastructure.</p>
       </article>
       <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
-        <h2 class="text-xl font-semibold tracking-tight">Nokia Points of Parity (PoP)</h2>
+        <h2 class="text-xl font-semibold tracking-tight">Nokia Points of Parity</h2>
         <ul class="list-disc pl-5 mt-3 space-y-1 text-sm leading-6 text-gray-700">
           <li>PQC readiness and QKD integration options.</li>
           <li>Crypto‑agility for algorithm updates.</li>
@@ -713,7 +714,7 @@
     <div class="fixed inset-0 bg-black/40" data-close="pod"></div>
     <div class="relative mx-auto my-8 max-w-2xl bg-white rounded-2xl shadow-2xl ring-1 ring-black/10 flex flex-col max-h-[85vh]">
       <div class="flex items-center justify-between p-4 border-b">
-        <h3 id="pod-modal-title" class="text-lg font-semibold">Nokia Points of Difference (PoD)</h3>
+        <h3 id="pod-modal-title" class="text-lg font-semibold">Nokia Points of Difference</h3>
         <button type="button" class="h-8 w-8 inline-flex items-center justify-center rounded-md text-gray-600 hover:bg-gray-100" data-close="pod" aria-label="Close">✕</button>
       </div>
       <div class="p-6 space-y-3 text-sm leading-6 text-gray-700 overflow-y-auto">
@@ -732,7 +733,7 @@
     <div class="fixed inset-0 bg-black/40" data-close="pop"></div>
     <div class="relative mx-auto my-8 max-w-2xl bg-white rounded-2xl shadow-2xl ring-1 ring-black/10 flex flex-col max-h-[85vh]">
       <div class="flex items-center justify-between p-4 border-b">
-        <h3 id="pop-modal-title" class="text-lg font-semibold">Nokia Points of Parity (PoP)</h3>
+        <h3 id="pop-modal-title" class="text-lg font-semibold">Nokia Points of Parity</h3>
         <button type="button" class="h-8 w-8 inline-flex items-center justify-center rounded-md text-gray-600 hover:bg-gray-100" data-close="pop" aria-label="Close">✕</button>
       </div>
       <div class="p-6 space-y-3 text-sm leading-6 text-gray-700 overflow-y-auto">
