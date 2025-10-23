@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nokia Value Propositions Comparative Analysis</title>
+  <meta name="description" content="Business-readable summary with visuals and recommendations for Nokia value propositions: PoD/PoP, RBT, CVPs, academic and quantum summaries, and competitive analysis." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+  <style>[hidden]{display:none !important}</style>
+  <main class="max-w-7xl mx-auto p-6 lg:p-10 space-y-8">
+    <!-- Header -->
+    <header class="flex items-end justify-between gap-4">
+      <div>
+        <h1 class="text-2xl md:text-3xl font-bold">Nokia Value Propositions Comparative Analysis</h1>
+        <p class="text-gray-500 mt-1 text-sm">Comparative Analysis against Adtran, Ciena, Cisco, Juniper in Quantum Security Space</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="px-3 py-1 rounded-full text-sm bg-indigo-50 text-indigo-700">Draft</span>
+        <span class="px-3 py-1 rounded-full text-sm bg-emerald-50 text-emerald-700">Updated just now</span>
+      </div>
+    </header>
+
+    <!-- Top grid: PoD/PoP + RBT -->
+    <section class="grid grid-cols-1 xl:grid-cols-2 gap-6">
+      <!-- PoD / PoP snapshot -->
+      <div class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">PoD / PoP Snapshot</h2>
+        <p class="text-gray-500 mt-1">PoP — Point of Parity: VPs are as good as the competition. PoD — Point of Difference: VPs are different (superior/inferior) from the competition.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+          <div id="pod-card" class="rounded-2xl border border-gray-100 p-5 cursor-pointer hover:ring-1 hover:ring-indigo-200" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="pod-modal">
+            <p class="text-gray-500 text-sm">Nokia Points of Difference (PoD)</p>
+            <p class="text-4xl font-semibold tracking-tight mt-1">~70%</p>
+            <p class="text-gray-500 text-sm">High differentiation</p>
+            <p class="text-xs text-indigo-600 mt-1">Click for insight</p>
+          </div>
+          <div id="pop-card" class="rounded-2xl border border-gray-100 p-5 cursor-pointer hover:ring-1 hover:ring-indigo-200" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="pop-modal">
+            <p class="text-gray-500 text-sm">Nokia Points of Parity (PoP)</p>
+            <p class="text-4xl font-semibold tracking-tight mt-1">~30%</p>
+            <p class="text-gray-500 text-sm">Common with peers</p>
+            <p class="text-xs text-indigo-600 mt-1">Click for insight</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- RBT snapshot -->
+      <div class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">RBT Snapshot</h2>
+        <p class="text-gray-500 mt-1">Firm‑based, Market‑based, and Mixed resource contributions</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+          <div id="rbt-firm-card" class="rounded-2xl border border-gray-100 p-5 text-center cursor-pointer hover:ring-1 hover:ring-indigo-200" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="firm-modal">
+            <p class="text-gray-500 text-sm">Firm‑Based</p>
+            <p class="text-4xl font-semibold tracking-tight mt-1">8%</p>
+            <p class="text-xs text-indigo-600 mt-1">Click for insight</p>
+          </div>
+          <div id="rbt-market-card" class="rounded-2xl border border-gray-100 p-5 text-center cursor-pointer hover:ring-1 hover:ring-indigo-200" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="market-modal">
+            <p class="text-gray-500 text-sm">Market‑Based</p>
+            <p class="text-4xl font-semibold tracking-tight mt-1">3%</p>
+            <p class="text-xs text-indigo-600 mt-1">Click for insight</p>
+          </div>
+          <div id="rbt-mixed-card" class="rounded-2xl border border-gray-100 p-5 text-center cursor-pointer hover:ring-1 hover:ring-indigo-200" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="mixed-modal">
+            <p class="text-gray-500 text-sm">Mixed</p>
+            <p class="text-4xl font-semibold tracking-tight mt-1">89%</p>
+            <p class="text-xs text-indigo-600 mt-1">Click for insight</p>
+          </div>
+        </div>
+
+        <!-- Progress bar -->
+        <div class="mt-6">
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-gray-500">Distribution</span>
+            <span class="text-gray-500">Ecosystem‑led with selective firm IP</span>
+          </div>
+          <div class="mt-2 h-3 bg-gray-100 rounded-full overflow-hidden flex">
+            <div class="h-full bg-emerald-500" style="width:8%"></div>
+            <div class="h-full bg-amber-500" style="width:3%"></div>
+            <div class="h-full bg-rose-500" style="width:89%"></div>
+          </div>
+          <div class="flex justify-between text-xs mt-2 text-gray-500">
+            <span>Firm‑Based 8</span>
+            <span>Market‑Based 3</span>
+            <span>Mixed 89</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compact Checklist under At‑a‑Glance -->
+    <section>
+      <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-lg font-semibold tracking-tight">Nokia's Strengths &amp; Gaps (vs. Academic &amp; Quantum Security Ideals)</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2 text-sm text-gray-700">
+          <div>
+            <div class="font-medium text-gray-900 mb-1">Strengths</div>
+            <ul class="space-y-1">
+              <li>✅ Outcome‑focused (resonates with value‑in‑use)</li>
+              <li>✅ Evidence‑based (live deployments, trials)</li>
+              <li>✅ Collaborative &amp; standards‑aligned</li>
+              <li>✅ Defense‑in‑depth aligns with best practices</li>
+            </ul>
+          </div>
+          <div>
+            <div class="font-medium text-gray-900 mb-1">Gaps</div>
+            <ul class="space-y-1">
+              <li>❌ Lack of resonating focus (too many “all benefits” claims)</li>
+              <li>❌ Underemphasis on proprietary tech (low firm‑based)</li>
+              <li>❌ Mixed propositions may dilute clarity</li>
+              <li>❌ Limited emotional/social value (trust, brand assurance)</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Strengths & Gaps card under Summaries (removed per request) -->
+
+    <!-- Top 5 CVPs: Toggle -->
+    <section>
+      <div class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <div class="flex items-start justify-between gap-4">
+          <h2 class="text-xl font-semibold tracking-tight">Top 5 CVPs</h2>
+          <div class="inline-flex rounded-xl bg-gray-100 p-1 text-sm" role="tablist" aria-label="CVP Toggle">
+            <button class="px-3 py-1.5 rounded-lg text-gray-900 bg-white shadow-sm ring-1 ring-black/5" role="tab" aria-selected="true" data-cvp-target="overall">Overall: Quantum‑Computer Safe Communication</button>
+            <button class="px-3 py-1.5 rounded-lg text-gray-600 hover:text-gray-900" role="tab" aria-selected="false" data-cvp-target="asean">Vector Growth ASEAN</button>
+            <button class="px-3 py-1.5 rounded-lg text-gray-600 hover:text-gray-900" role="tab" aria-selected="false" data-cvp-target="na">Vector Growth North America</button>
+          </div>
+        </div>
+
+        <!-- Overall -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-4" data-cvp-group="overall">
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">1) Quantum‑Safe Networks (QSN) Architecture</h3>
+            <p class="text-sm text-gray-600 mt-1">Provide a multi‑layered, defense‑in‑depth framework that integrates hybrid cryptography, ensuring secure evolution toward post‑quantum networks.</p>
+          </div>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">2) Crypto‑Resilience Through Agility</h3>
+            <p class="text-sm text-gray-600 mt-1">Enable dynamic cryptographic upgrades as algorithms and threats evolve, protecting investments and extending the life of existing infrastructure.</p>
+          </div>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">3) Cross‑Layer Protection</h3>
+            <p class="text-sm text-gray-600 mt-1">Deliver security across optical, Ethernet, MPLS, and IP layers—ensuring no single failure point and guaranteeing end‑to‑end integrity.</p>
+          </div>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">4) Future‑Proof Partnership Model</h3>
+            <p class="text-sm text-gray-600 mt-1">Co‑innovate with global research bodies and industry partners to test, validate, and deploy quantum‑safe solutions in real networks.</p>
+          </div>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">5) Operationalization of Quantum Safety</h3>
+            <p class="text-sm text-gray-600 mt-1">Offer consulting, design, and lifecycle services to plan, deploy, and maintain crypto‑agile networks—turning theory into deployable business outcomes.</p>
+          </div>
+        </div>
+
+        <!-- ASEAN -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-4" data-cvp-group="asean" hidden>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">1) Collaborative Ecosystem Leadership</h3>
+            <p class="text-sm text-gray-600 mt-1">Build local innovation ecosystems through global and regional partnerships, enabling ASEAN operators and governments to accelerate secure digital transformation.</p>
+          </div>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">2) Quantum‑Safe Readiness Today</h3>
+            <p class="text-sm text-gray-600 mt-1">Deploy quantum‑safe cryptography solutions already proven in markets like Singapore and Korea, ensuring ASEAN customers are future‑proof and standards‑aligned.</p>
+          </div>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">3) Defense‑in‑Depth for Diverse Networks</h3>
+            <p class="text-sm text-gray-600 mt-1">Apply multi‑layered security (optical, IP, MPLS, application) tailored for multi‑operator environments and hybrid infrastructures common across ASEAN nations.</p>
+          </div>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">4) Operational Flexibility and Cost Efficiency</h3>
+            <p class="text-sm text-gray-600 mt-1">Provide scalable, adaptable network protection that matches each country’s stage of digitalization—balancing resilience and affordability.</p>
+          </div>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">5) Trusted Partner for Critical Industries</h3>
+            <p class="text-sm text-gray-600 mt-1">Extend QSN deployments to energy, transport, and public sector customers, providing resilience and compliance for national security and smart city initiatives.</p>
+          </div>
+        </div>
+
+        <!-- North America -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-4" data-cvp-group="na" hidden>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">1) Outcome‑Based Security Leadership</h3>
+            <p class="text-sm text-gray-600 mt-1">Deliver measurable outcomes in crypto‑resilience and quantum safety, not just technologies—aligning with U.S. and Canadian security expectations.</p>
+          </div>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">2) Proven Deployments with Global Leaders</h3>
+            <p class="text-sm text-gray-600 mt-1">Showcase real‑world quantum‑safe rollouts (e.g., Proximus, HellasQCI) as proof of industrial maturity and readiness for North American critical infrastructure.</p>
+          </div>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">3) Defense‑in‑Depth, Multi‑Layer Cryptography</h3>
+            <p class="text-sm text-gray-600 mt-1">Integrate multiple complementary encryption layers to deliver superior protection against quantum and classical attacks for Tier‑1 operators.</p>
+          </div>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">4) Crypto‑Agile and Standards‑Compliant Approach</h3>
+            <p class="text-sm text-gray-600 mt-1">Adopt NIST/ETSI‑aligned algorithms and architectures, ensuring seamless policy upgrades and regulatory compliance.</p>
+          </div>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-medium">5) Partner Ecosystem Expansion</h3>
+            <p class="text-sm text-gray-600 mt-1">Collaborate with hyperscalers, carriers, and research networks to build quantum‑resilient ecosystems across cloud, edge, and transport domains.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PoD vs PoP -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6" hidden>
+      <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">Nokia Points of Difference (PoD)</h2>
+        <ul class="list-disc pl-5 mt-3 space-y-1 text-sm leading-6 text-gray-700">
+          <li>Defense‑in‑depth across IP/optical/application layers.</li>
+          <li>Standards leadership and compliance (NIST, ETSI, IETF, FIPS).</li>
+          <li>Proven deployments and QCI involvement; strong ecosystem.</li>
+        </ul>
+        <p class="text-sm text-gray-700 mt-3"><span class="font-bold">Summary:</span> Nokia's quantum‑safe differentiation is built on its proven, multi‑layered defense architecture, validated by industry‑first certifications and over 100 live deployments across critical infrastructure.</p>
+      </article>
+      <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">Nokia Points of Parity (PoP)</h2>
+        <ul class="list-disc pl-5 mt-3 space-y-1 text-sm leading-6 text-gray-700">
+          <li>PQC readiness and QKD integration options.</li>
+          <li>Crypto‑agility for algorithm updates.</li>
+          <li>Interoperable key management and APIs.</li>
+        </ul>
+        <p class="text-sm text-gray-700 mt-3"><span class="font-bold">Summary:</span> Nokia offers the same foundational quantum-safe capabilities — PQC, QKD, and crypto-agility — that have become standard expectations across the competitive landscape.</p>
+      </article>
+    </section>
+
+    <!-- Academic + Quantum Summaries -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <!-- Academic Summary -->
+      <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">Academic Value Proposition Summary</h2>
+        <p class="text-gray-500 mt-1">Strategic CVP guidance grounded in the literature</p>
+        <div class="mt-4 space-y-3 text-sm leading-6">
+          <p>A CVP articulates a value promise as a reciprocal benefit exchange; it is central to the business model and adoption.</p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li><span class="font-medium">Target Customer:</span> Clearly defined audience.</li>
+            <li><span class="font-medium">Value Elements:</span> Functional, economic, emotional, and social benefits.</li>
+            <li><span class="font-medium">Differentiation:</span> Points of difference and parity; avoid “all benefits”.</li>
+            <li><span class="font-medium">Resonating Focus:</span> 1–2 benefits that matter most.</li>
+            <li><span class="font-medium">Co‑Creation &amp; Value‑in‑Use:</span> Value realized during use.</li>
+            <li><span class="font-medium">Demonstrable &amp; Quantifiable:</span> Cases, calculators, guarantees.</li>
+            <li><span class="font-medium">Avoid Complexity:</span> Mixed utilitarian/hedonic bundles reduce appeal.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Quantum Security Summary -->
+      <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">Quantum Security Value Proposition Summary</h2>
+        <p class="text-gray-500 mt-1">Risk‑driven, transitional CVPs for the quantum era</p>
+        <div class="mt-4 space-y-3 text-sm leading-6">
+          <p class="text-gray-700">Protect digital infrastructure and sensitive data from current and future quantum‑enabled threats.</p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li><span class="font-medium">Quantum Resistance:</span> PQC and/or QKD against “harvest now, decrypt later”.</li>
+            <li><span class="font-medium">Crypto‑Agility:</span> Adapt algorithms as standards evolve.</li>
+            <li><span class="font-medium">Defense‑in‑Depth:</span> Layered security across network and application.</li>
+            <li><span class="font-medium">Interoperability &amp; Standards:</span> ETSI, NIST, IETF compliance.</li>
+            <li><span class="font-medium">Future‑Proofing:</span> Scalable, vendor‑agnostic, long‑term relevance.</li>
+            <li><span class="font-medium">Ideal Differentiation:</span> Clear guarantees, real deployments, hybrid PQC+QKD.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- Competitive Positioning vs. Adtran, Ciena, Cisco, Juniper -->
+    <section>
+      <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">Competitive Positioning vs. Adtran, Ciena, Cisco, Juniper</h2>
+        <div class="overflow-x-auto mt-3">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="text-left text-gray-600">
+                <th class="py-2 pr-3">Company</th>
+                <th class="py-2 pr-3">Strengths</th>
+                <th class="py-2">Weaknesses</th>
+              </tr>
+            </thead>
+            <tbody class="align-top">
+              <tr class="border-t"><td class="py-2 pr-3 font-medium">Nokia</td><td class="py-2 pr-3">Strong ecosystem, live deployments, regulatory compliance</td><td class="py-2">Low proprietary tech emphasis, mixed-value complexity</td></tr>
+              <tr class="border-t"><td class="py-2 pr-3 font-medium">Adtran</td><td class="py-2 pr-3">Early PQC adoption, crypto-agile hardware</td><td class="py-2">Limited market presence, fewer large-scale references</td></tr>
+              <tr class="border-t"><td class="py-2 pr-3 font-medium">Juniper</td><td class="py-2 pr-3">Integration with AI-native platforms, QRNG &amp; QKD support</td><td class="py-2">Narrower focus on VPN/IPsec, less optical-layer emphasis</td></tr>
+              <tr class="border-t"><td class="py-2 pr-3 font-medium">Ciena</td><td class="py-2 pr-3">High-capacity encryption (1.6T), satellite &amp; terrestrial QKD integration</td><td class="py-2">Less emphasis on crypto-resilience or multi-layer defense</td></tr>
+              <tr class="border-t"><td class="py-2 pr-3 font-medium">Cisco</td><td class="py-2 pr-3">End-to-end quantum networking (chips, software, PQC), strong R&amp;D</td><td class="py-2">Less focus on outcome-based messaging or partner-led delivery</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <!-- (Removed) Elaboration: PoD, PoP cards placed under Competitive Positioning -->
+
+    <section>
+      <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">Nokia Resource Based View</h2>
+        <div class="overflow-x-auto mt-2">
+          <table class="w-full text-sm"><thead>
+            <tr class="text-left text-gray-600">
+              <th class="py-2 pr-3">RBT Class</th>
+              <th class="py-2 pr-3">PoD/PoP Mix</th>
+              <th class="py-2">Implication</th>
+            </tr></thead>
+            <tbody class="align-top">
+              <tr class="border-t"><td class="py-2 pr-3">Mixed (89%)</td><td class="py-2 pr-3">High PoD in collaboration, outcome, ecosystem</td><td class="py-2">Market agility; dilutes proprietary advantage</td></tr>
+              <tr class="border-t"><td class="py-2 pr-3">Firm-Based (8%)</td><td class="py-2 pr-3">Mostly PoD (e.g., FIPS, Bell Labs)</td><td class="py-2">Underused; strengthen IP-led messaging</td></tr>
+              <tr class="border-t"><td class="py-2 pr-3">Market-Based (3%)</td><td class="py-2 pr-3">Mostly PoP (partnerships, standards)</td><td class="py-2">Reactive vs. market-shaping posture</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-sm text-gray-700 mt-4"><span class="font-bold">Summary:</span> Nokia’s value strategy leans heavily on partnerships and collaboration, giving it market flexibility but making its differentiation easy to imitate. To strengthen its position, Nokia should spotlight its proprietary innovations and shift from reacting to standards toward shaping the quantum‑security market itself.</p>
+      </article>
+    </section>
+
+    <!-- Nokia Themes -->
+    <section hidden>
+      <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">Nokia Value Propositions Summary</h2>
+        <ul class="list-disc pl-5 mt-3 space-y-1 text-sm leading-6 text-gray-700">
+          <li><span class="font-medium">Outcome‑Focused:</span> Emphasizes “quantum‑safe outcome” over specific technologies.</li>
+          <li><span class="font-medium">Collaborative Ecosystem:</span> Partnerships with QKD providers, system integrators, and research institutions.</li>
+          <li><span class="font-medium">Proven Deployments:</span> 100+ live deployments; international QCI initiatives.</li>
+          <li><span class="font-medium">Regulatory Alignment:</span> Adherence to NIST, FIPS, and other standards.</li>
+          <li><span class="font-medium">Multi‑Layered Defense:</span> Crypto‑resilience via defense‑in‑depth.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Differentiation & Clarity Analysis -->
+    <section hidden>
+      <div class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">Differentiation &amp; Clarity Analysis</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-4">
+          <div>
+            <h3 class="font-semibold">PoD Concentration (~70%)</h3>
+            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm leading-6 text-gray-700">
+              <li>High proportion of Points of Difference across CVPs.</li>
+              <li><span class="font-medium">Key PoDs:</span> Outcome-based approach; 100+ deployments; regulatory leadership (FIPS 140-3, NIST); defense-in-depth; ecosystem “power of n”.</li>
+            </ul>
+
+            <h3 class="font-semibold mt-5">Clarity &amp; Coverage Strengths</h3>
+            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm leading-6 text-gray-700">
+              <li>Consistent messaging: “quantum-safe outcome”, “defense-in-depth”, “crypto-resilience”.</li>
+              <li>Industry tailoring for finance, healthcare, government.</li>
+              <li>Future-proofing via crypto-agility and long-term readiness.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold">Gaps in Clarity &amp; Differentiation</h3>
+            <div class="overflow-x-auto mt-2">
+              <table class="w-full text-sm"><thead>
+                <tr class="text-left text-gray-600">
+                  <th class="py-2 pr-3">Gap Area</th>
+                  <th class="py-2 pr-3">Description</th>
+                  <th class="py-2">Example</th>
+                </tr></thead>
+                <tbody class="align-top">
+                  <tr class="border-t"><td class="py-2 pr-3">Overuse of PoP</td><td class="py-2 pr-3">~30% of CVPs match competitor claims.</td><td class="py-2">“We partner with universities and standards bodies.”</td></tr>
+                  <tr class="border-t"><td class="py-2 pr-3">Vague Differentiators</td><td class="py-2 pr-3">Some PoDs lack specificity or proof.</td><td class="py-2">“Unshakable trust” without unique backing.</td></tr>
+                  <tr class="border-t"><td class="py-2 pr-3">Under-leveraged Firm-Based Assets</td><td class="py-2 pr-3">Proprietary innovation story is soft.</td><td class="py-2">Bell Labs not framed as unique engine.</td></tr>
+                  <tr class="border-t"><td class="py-2 pr-3">Messaging Complexity</td><td class="py-2 pr-3">Too many mixed themes can dilute focus.</td><td class="py-2">“Multi-layered”, “crypto-resilient”, “ecosystem-driven”.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="font-semibold mt-5">Nokia Resource Based View</h3>
+            <div class="overflow-x-auto mt-2">
+              <table class="w-full text-sm"><thead>
+                <tr class="text-left text-gray-600">
+                  <th class="py-2 pr-3">RBT Class</th>
+                  <th class="py-2 pr-3">PoD/PoP Mix</th>
+                  <th class="py-2">Implication</th>
+                </tr></thead>
+                <tbody class="align-top">
+                  <tr class="border-t"><td class="py-2 pr-3">Mixed (89%)</td><td class="py-2 pr-3">High PoD in collaboration, outcome, ecosystem</td><td class="py-2">Market agility; dilutes proprietary advantage</td></tr>
+                  <tr class="border-t"><td class="py-2 pr-3">Firm-Based (8%)</td><td class="py-2 pr-3">Mostly PoD (e.g., FIPS, Bell Labs)</td><td class="py-2">Underused; strengthen IP-led messaging</td></tr>
+                  <tr class="border-t"><td class="py-2 pr-3">Market-Based (3%)</td><td class="py-2 pr-3">Mostly PoP (partnerships, standards)</td><td class="py-2">Reactive vs. market-shaping posture</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto mt-6">
+          <h3 class="font-semibold">Competitor PoDs vs. Nokia</h3>
+          <table class="w-full text-sm mt-2"><thead>
+            <tr class="text-left text-gray-600">
+              <th class="py-2 pr-3">Competitor</th>
+              <th class="py-2 pr-3">Key PoD</th>
+              <th class="py-2">Nokia’s Relative Position</th>
+            </tr></thead>
+            <tbody class="align-top">
+              <tr class="border-t"><td class="py-2 pr-3">Cisco</td><td class="py-2 pr-3">End-to-end quantum networking (chip to software)</td><td class="py-2">Less hardware-level innovation messaging</td></tr>
+              <tr class="border-t"><td class="py-2 pr-3">Ciena</td><td class="py-2 pr-3">1.6T encryption; satellite QKD integration</td><td class="py-2">Less emphasis on high-capacity performance</td></tr>
+              <tr class="border-t"><td class="py-2 pr-3">Juniper</td><td class="py-2 pr-3">AI-native + quantum-safe VPNs</td><td class="py-2">Less integrated AI/automation story</td></tr>
+              <tr class="border-t"><td class="py-2 pr-3">Adtran</td><td class="py-2 pr-3">Early PQC adoption; crypto-agile hardware</td><td class="py-2">Less focus on first-mover cryptography</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-6">
+          <h3 class="font-semibold">Summary</h3>
+          <ul class="list-disc pl-5 mt-2 space-y-1 text-sm leading-6 text-gray-700">
+            <li><span class="font-medium">Strengths:</span> Outcome-based security, proven deployments, defense-in-depth; high PoD ratio supports strong positioning.</li>
+            <li><span class="font-medium">Gaps:</span> Over-reliance on ecosystem PoDs; under-leveraged firm-based assets; sharpen to 1–2 resonant, evidence-backed differentiators.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sales Handbook Analysis (before Recommendations) -->
+    <section>
+      <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">Nokia Sales Brief: Value Propositions Anaysis</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-3">
+          <!-- CVP Signals -->
+          <div>
+            <h3 class="font-semibold">Communicated CVP Highlights</h3>
+            <ul class="mt-2 space-y-3 text-sm leading-6 text-gray-700">
+              <li>
+                <div class="font-medium">Hybrid Trust</div>
+                <div class="text-gray-600">Combines trusted access with quantum‑safe capabilities; integrates with existing controls for stronger security.</div>
+              </li>
+              <li>
+                <div class="font-medium">Scalable QKD</div>
+                <div class="text-gray-600">Customizable, scalable QKD to fit organizational needs; optimizes performance and data protection.</div>
+              </li>
+              <li>
+                <div class="font-medium">Customer Co‑innovation</div>
+                <div class="text-gray-600">Joint development/implementation with customers; ensures fit‑for‑purpose designs and faster value realization.</div>
+              </li>
+              <li>
+                <div class="font-medium">Trust &amp; Leadership</div>
+                <div class="text-gray-600">Positions Nokia as a trusted industry leader; reduces perceived risk for buyers.</div>
+              </li>
+              <li>
+                <div class="font-medium">Flexibility &amp; Adaptability</div>
+                <div class="text-gray-600">Solutions tailored to evolving security needs across the network lifecycle; sustained value over time.</div>
+              </li>
+            </ul>
+          </div>
+          <!-- Clarity Improvements -->
+          <div>
+            <h3 class="font-semibold">Clarity Improvements</h3>
+            <ul class="mt-2 space-y-2 text-sm leading-6 text-gray-700">
+              <li>Define each CVP’s unique value vs competitors.</li>
+              <li>Use simple, concise language; minimize jargon.</li>
+              <li>Show concrete examples/case studies for each CVP.</li>
+              <li>Emphasize customer benefits and business impact.</li>
+              <li>Apply a consistent structure and style throughout.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Recommendations -->
+    <section>
+      <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">Disruptive Technology Analysis &amp; Recommendations for Nokia</h2>
+        <div class="mt-3 space-y-4 text-sm leading-6 text-gray-700">
+          <div class="flex gap-3 items-start">
+            <div class="shrink-0 h-8 w-8 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center text-base">🔬</div>
+            <div>
+              <div class="text-base font-bold">Strengthen Proprietary Differentiation</div>
+              <p class="text-gray-700">Leverage unique firm‑based assets such as Bell Labs research and FIPS‑certified encryption to position Nokia as a technology creator, not just an integrator.</p>
+              <p class="text-gray-600"><span class="font-bold">Tactic:</span> Develop a “Bell Labs Quantum Innovation” campaign showcasing patents, proofs‑of‑concept, and benchmark results that competitors cannot replicate.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="shrink-0 h-8 w-8 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center text-base">📣</div>
+            <div>
+              <div class="text-base font-bold">Lead Market Shaping, Not Just Compliance</div>
+              <p class="text-gray-700">Move beyond reacting to NIST and ETSI standards by defining new service models that shape customer expectations and industry direction.</p>
+              <p class="text-gray-600"><span class="font-bold">Tactic:</span> Launch a pilot “Quantum‑Safe Network‑as‑a‑Service” offering with CSPs to demonstrate a new monetization model and customer value stream.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="shrink-0 h-8 w-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center text-base">🌐</div>
+            <div>
+              <div class="text-base font-bold">Translate Ecosystem Strength into Tangible Value</div>
+              <p class="text-gray-700">Convert the “Power of n” narrative into measurable outcomes—interoperability benchmarks, joint trials, and performance KPIs—to transform partnerships from PoP to defensible PoD.</p>
+              <p class="text-gray-600"><span class="font-bold">Tactic:</span> Publish an annual “Quantum Interoperability Report” quantifying network performance, partner integration results, and cross‑vendor success metrics.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="shrink-0 h-8 w-8 rounded-lg bg-sky-50 text-sky-700 flex items-center justify-center text-base">🗣️</div>
+            <div>
+              <div class="text-base font-bold">Simplify and Humanize the CVP Messaging</div>
+              <p class="text-gray-700">Use clear, outcome‑focused language emphasizing customer benefits, risk reduction, and ROI rather than technical complexity or buzzwords.</p>
+              <p class="text-gray-600"><span class="font-bold">Tactic:</span> Redesign marketing collateral using customer use cases and short‑form storytelling that links quantum safety directly to business continuity.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="shrink-0 h-8 w-8 rounded-lg bg-rose-50 text-rose-700 flex items-center justify-center text-base">⚡</div>
+            <div>
+              <div class="text-base font-bold">Embed Disruptive Agility in Execution</div>
+              <p class="text-gray-700">Adopt an iterative innovation approach—rapid prototyping, co‑creation with CSPs, and AI‑driven analytics—to remain adaptive to quantum and post‑quantum shifts.</p>
+              <p class="text-gray-600"><span class="font-bold">Tactic:</span> Establish an internal “Quantum Acceleration Lab” with agile sprints co‑led by customers and partners to test, refine, and commercialize disruptive security use cases.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Competitive Positioning & Strategic Overview -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6" hidden>
+      <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">Competitive Positioning</h2>
+        <div class="overflow-x-auto mt-3">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="text-left text-gray-600">
+                <th class="py-2 pr-3">Company</th>
+                <th class="py-2 pr-3">Strengths</th>
+                <th class="py-2">Weaknesses</th>
+              </tr>
+            </thead>
+            <tbody class="align-top">
+              <tr class="border-t"><td class="py-2 pr-3 font-medium">Nokia</td><td class="py-2 pr-3">Strong ecosystem, live deployments, regulatory compliance</td><td class="py-2">Low proprietary tech emphasis; mixed‑value complexity</td></tr>
+              <tr class="border-t"><td class="py-2 pr-3 font-medium">Adtran</td><td class="py-2 pr-3">Early PQC adoption; crypto‑agile hardware</td><td class="py-2">Limited market presence; fewer large‑scale references</td></tr>
+              <tr class="border-t"><td class="py-2 pr-3 font-medium">Juniper</td><td class="py-2 pr-3">Integration with AI‑native platforms; QRNG &amp; QKD support</td><td class="py-2">Narrower VPN/IPsec focus; less optical emphasis</td></tr>
+              <tr class="border-t"><td class="py-2 pr-3 font-medium">Ciena</td><td class="py-2 pr-3">High‑capacity encryption (1.6T); satellite &amp; terrestrial QKD</td><td class="py-2">Less focus on crypto‑resilience or multi‑layer defense</td></tr>
+              <tr class="border-t"><td class="py-2 pr-3 font-medium">Cisco</td><td class="py-2 pr-3">End‑to‑end quantum networking; strong R&amp;D</td><td class="py-2">Less outcome‑based messaging; fewer partner‑led motions</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
+        <h2 class="text-xl font-semibold tracking-tight">Strategic Strengths &amp; Weaknesses</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-3">
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-semibold">Strengths</h3>
+            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm leading-6 text-gray-700">
+              <li>Proven deployment track record across industries.</li>
+              <li>Strong partner network and ecosystem strategy.</li>
+              <li>Regulatory and standards leadership (e.g., FIPS).</li>
+              <li>Outcome‑based messaging aligns with enterprise risk.</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl border border-gray-100 p-5">
+            <h3 class="font-semibold">Weaknesses</h3>
+            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm leading-6 text-gray-700">
+              <li>Over‑reliance on mixed‑value propositions may confuse.</li>
+              <li>Low firm‑based focus may affect innovation leadership perception.</li>
+              <li>Limited emphasis on emotional/trust‑based value elements.</li>
+              <li>Less differentiation in high‑capacity or hardware innovation vs. Ciena/Cisco.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Footer note -->
+    <footer class="text-center text-xs text-gray-400 pt-2">
+      Built with TailwindCSS via CDN. Replace static numbers with live data when available.
+    </footer>
+  </main>
+  <!-- Mixed Insight Modal -->
+  <div id="mixed-modal" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="mixed-modal-title">
+    <div class="fixed inset-0 bg-black/40" data-close="mixed"></div>
+    <div class="relative mx-auto my-8 max-w-3xl bg-white rounded-2xl shadow-xl ring-1 ring-black/10 flex flex-col max-h-[85vh]">
+      <div class="flex items-center justify-between p-4 border-b">
+        <h3 id="mixed-modal-title" class="text-lg font-semibold">Insight: Mixed (89%) — What it means</h3>
+        <button type="button" class="h-8 w-8 inline-flex items-center justify-center rounded-md text-gray-600 hover:bg-gray-100" data-close="mixed" aria-label="Close">✕</button>
+      </div>
+      <div class="p-6 space-y-4 text-sm leading-6 text-gray-700 overflow-y-auto">
+        <p>When we say Nokia relies on Mixed Resources, it means their value proposition is built on a combination of their own internal capabilities (Firm‑based) and external partnerships and market positioning (Market‑based). They are not just selling their own proprietary technology, nor are they just reselling others' tech. They are acting as an integrator and orchestrator.</p>
+
+        <div>
+          <h4 class="font-semibold text-gray-900">1) Value Creation Through Partner Ecosystems</h4>
+          <ul class="list-disc pl-5 mt-1 space-y-1">
+            <li><span class="font-medium">Technology (Value Creation):</span> Partners with specialized QKD providers (e.g., ID Quantique, Toshiba) to incorporate best‑in‑breed key distribution — leveraging others’ R&amp;D.</li>
+            <li><span class="font-medium">Reach (Value Delivery):</span> Works with service providers and SIs (e.g., Kyndryl) who own customer relationships in finance/government; Nokia provides core networking, partners deliver the solution.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-900">2) The “Power of n” Messaging</h4>
+          <p>Achieving a quantum‑safe outcome requires many players. Nokia’s value is federating application providers, connectivity enablers, and quantum key makers toward a common goal.</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-900">3) Technology Agnosticism + Outcome‑Based Framing</h4>
+          <p>Instead of pushing proprietary crypto, Nokia leads with the <em>quantum‑safe outcome</em> and mixes its own platforms with partner tech to achieve it.</p>
+          <p class="mt-1">Example: “Defense‑in‑depth” combines Nokia optical/IP platforms (Firm) with partner QKD (Market) and standardized PQC (Market), orchestrated end‑to‑end.</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-900">4) Rallying Around Standards</h4>
+          <p>Leadership in NIST/ETSI/IETF and certifications (e.g., FIPS 140‑3) builds on shared market resources — enabling expertise and first‑mover claims without owning the entire stack.</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-900">Blueprint in Practice</h4>
+          <ul class="list-disc pl-5 mt-1 space-y-1">
+            <li>Nokia routers and optical encryptors (Firm).</li>
+            <li>Partner QKD hardware for key generation (Market).</li>
+            <li>NIST‑standardized PQC algorithms (Market).</li>
+            <li>Integration services from partners like Kyndryl (Market).</li>
+          </ul>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Market-Based Insight Modal -->
+  <div id="market-modal" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="market-modal-title">
+    <div class="fixed inset-0 bg-black/40" data-close="market"></div>
+    <div class="relative mx-auto my-8 max-w-3xl bg-white rounded-2xl shadow-xl ring-1 ring-black/10 flex flex-col max-h-[85vh]">
+      <div class="flex items-center justify-between p-4 border-b">
+        <h3 id="market-modal-title" class="text-lg font-semibold">Insight: Market‑Based (3%) — What's missing</h3>
+        <button type="button" class="h-8 w-8 inline-flex items-center justify-center rounded-md text-gray-600 hover:bg-gray-100" data-close="market" aria-label="Close">✕</button>
+      </div>
+      <div class="p-6 space-y-4 text-sm leading-6 text-gray-700 overflow-y-auto">
+        <p>In simple terms, Nokia is overwhelmingly focused on <em>how</em> to build a quantum‑safe network, but is largely silent on <em>why</em> a customer's business needs one, beyond the obvious “to avoid getting hacked”.</p>
+
+        <div>
+          <h4 class="font-semibold text-gray-900">The 3%: What little Market‑based resource they use</h4>
+          <ul class="list-disc pl-5 mt-1 space-y-1">
+            <li><span class="font-medium">New revenue for operators:</span> Sell “quantum‑safe connectivity” as a premium service to banks and hospitals.</li>
+            <li><span class="font-medium">Regulatory compliance:</span> References to meeting frameworks like DORA and HIPAA.</li>
+          </ul>
+          <p class="mt-1 text-gray-600">Good start — but it’s a tiny part of the message.</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-900">The 97% gap: What's missing</h4>
+          <div class="mt-2 space-y-3">
+            <div>
+              <div class="font-medium">1) They don’t create new market demand</div>
+              <p><span class="italic">What they do (Mixed/Firm):</span> “We provide a defense‑in‑depth architecture with crypto‑agility.”</p>
+              <p><span class="italic">What a Market‑based player would say:</span> “Your ‘Harvest Now, Decrypt Later’ risk isn’t just tech — it’s a balance‑sheet liability. Be the first bank with ‘Quantum‑Safe Verified’ transactions to win durable client trust.”</p>
+            </div>
+            <div>
+              <div class="font-medium">2) They underutilize emotional and trust‑based messaging</div>
+              <p><span class="italic">What they do:</span> Mention “unshakable trust” once, without a narrative.</p>
+              <p><span class="italic">What a Market‑based player would do:</span> Build the brand around peace of mind — stories of CEOs sleeping better and nations securing critical infrastructure for the next generation.</p>
+            </div>
+            <div>
+              <div class="font-medium">3) They follow, rather than shape, the conversation</div>
+              <p>Nokia reacts to “Q‑Day” fear that others defined.</p>
+              <p><span class="italic">A true market leader:</span> Defines a new category — e.g., “Business Continuity Assurance for the Quantum Era,” reframing the problem and solution.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-900">Practical consequence</h4>
+          <p>This lack of Market‑based focus makes the message feel transactional and technical, not transformational and business‑centric.</p>
+          <ul class="list-disc pl-5 mt-1 space-y-1">
+            <li><span class="font-medium">CISO:</span> Might buy on specs.</li>
+            <li><span class="font-medium">CEO/Board:</span> Buys from a partner who links the solution to shareholder value, new models, and brand protection.</li>
+          </ul>
+          <p class="mt-1">In short, by neglecting Market‑based resources, Nokia wins with engineers but risks losing the C‑suite conversation — seen as a vendor of technical parts, not a strategic partner for business resilience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firm-Based Insight Modal -->
+  <div id="firm-modal" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="firm-modal-title">
+    <div class="fixed inset-0 bg-black/40" data-close="firm"></div>
+    <div class="relative mx-auto my-8 max-w-3xl bg-white rounded-2xl shadow-xl ring-1 ring-black/10 flex flex-col max-h-[85vh]">
+      <div class="flex items-center justify-between p-4 border-b">
+        <h3 id="firm-modal-title" class="text-lg font-semibold">Insight: Firm‑Based (8%) — Underused innovation signal</h3>
+        <button type="button" class="h-8 w-8 inline-flex items-center justify-center rounded-md text-gray-600 hover:bg-gray-100" data-close="firm" aria-label="Close">✕</button>
+      </div>
+      <div class="p-6 space-y-4 text-sm leading-6 text-gray-700 overflow-y-auto">
+        <p>In simple terms, this low percentage means Nokia is not leading with its own technological breakthroughs as the primary reason to buy. They have unique technology, but they keep it in the background.</p>
+
+        <div>
+          <h4 class="font-semibold text-gray-900">The 8%: Firm‑based resources they do use</h4>
+          <ul class="list-disc pl-5 mt-1 space-y-1">
+            <li><span class="font-medium">Nokia Bell Labs:</span> Signals deep, long‑term research credibility.</li>
+            <li><span class="font-medium">FIPS 140‑3 certification:</span> First‑in‑industry for optical encryption — a powerful, defensible proof point.</li>
+            <li><span class="font-medium">Proprietary HW/SW integration:</span> PQC evaluation in 5G ecosystem; platforms like 1830 SMS for key management.</li>
+          </ul>
+          <p class="mt-1 text-gray-600">Strong assets — but used as supporting actors, not the star.</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-900">The 92% gap: Consequences of under‑playing the hand</h4>
+          <div class="mt-2 space-y-3">
+            <div>
+              <div class="font-medium">1) Cedes “innovation leader” position</div>
+              <p>Cisco highlights entanglement chips and Quantum Labs; Ciena leads with 1.6 Tbps encryption. Nokia’s “we integrate the best tech” can sound like curator, not inventor.</p>
+            </div>
+            <div>
+              <div class="font-medium">2) Outcome lacks a unique “how”</div>
+              <p>“We deliver quantum‑safe outcomes” begs the question “how better than anyone else?” A stronger Firm‑based answer would lead with FIPS‑certified optical + Bell Labs’ crypto‑agile R&amp;D.</p>
+            </div>
+            <div>
+              <div class="font-medium">3) Missed premium pricing leverage</div>
+              <p>Proprietary tech and unique R&amp;D justify premium pricing. Leading primarily as orchestrator invites price‑sensitive comparisons on solution completeness vs. unique IP.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-900">Practical implication</h4>
+          <p>Nokia’s 8% Firm‑based usage suggests a strategy to win on reliability, integration, and proven deployments — a valid, lower‑risk path. The gap: vulnerability to competitors who combine ecosystem strength with compelling proprietary breakthroughs. Integrators can be replaced; foundational innovators are harder to dislodge. By leading more boldly with Bell Labs innovation, FIPS‑certified encryption, and proprietary optical systems, Nokia can reclaim innovation leadership, justify premium pricing, and shift perception from capable integrator to foundational inventor.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PoD Insight Modal -->
+  <div id="pod-modal" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="pod-modal-title">
+    <div class="fixed inset-0 bg-black/40" data-close="pod"></div>
+    <div class="relative mx-auto my-8 max-w-2xl bg-white rounded-2xl shadow-2xl ring-1 ring-black/10 flex flex-col max-h-[85vh]">
+      <div class="flex items-center justify-between p-4 border-b">
+        <h3 id="pod-modal-title" class="text-lg font-semibold">Nokia Points of Difference (PoD)</h3>
+        <button type="button" class="h-8 w-8 inline-flex items-center justify-center rounded-md text-gray-600 hover:bg-gray-100" data-close="pod" aria-label="Close">✕</button>
+      </div>
+      <div class="p-6 space-y-3 text-sm leading-6 text-gray-700 overflow-y-auto">
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Defense‑in‑depth across IP/optical/application layers.</li>
+          <li>Standards leadership and compliance (NIST, ETSI, IETF, FIPS).</li>
+          <li>Proven deployments and QCI involvement; strong ecosystem.</li>
+        </ul>
+        <p class="mt-2"><span class="font-bold">Summary:</span> Nokia's quantum-safe differentiation is built on its proven, multi-layered defense architecture, validated by industry-first certifications and over 100 live deployments across critical infrastructure.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PoP Insight Modal -->
+  <div id="pop-modal" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="pop-modal-title">
+    <div class="fixed inset-0 bg-black/40" data-close="pop"></div>
+    <div class="relative mx-auto my-8 max-w-2xl bg-white rounded-2xl shadow-2xl ring-1 ring-black/10 flex flex-col max-h-[85vh]">
+      <div class="flex items-center justify-between p-4 border-b">
+        <h3 id="pop-modal-title" class="text-lg font-semibold">Nokia Points of Parity (PoP)</h3>
+        <button type="button" class="h-8 w-8 inline-flex items-center justify-center rounded-md text-gray-600 hover:bg-gray-100" data-close="pop" aria-label="Close">✕</button>
+      </div>
+      <div class="p-6 space-y-3 text-sm leading-6 text-gray-700 overflow-y-auto">
+        <ul class="list-disc pl-5 space-y-1">
+          <li>PQC readiness and QKD integration options.</li>
+          <li>Crypto‑agility for algorithm updates.</li>
+          <li>Interoperable key management and APIs.</li>
+        </ul>
+        <p class="mt-2"><span class="font-bold">Summary:</span> Nokia offers the same foundational quantum-safe capabilities — PQC, QKD, and crypto-agility — that have become standard expectations across the competitive landscape.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function(){
+      const buttons = document.querySelectorAll('[data-cvp-target]');
+      const groups = document.querySelectorAll('[data-cvp-group]');
+      function setActive(key){
+        groups.forEach(g => {
+          const show = (g.dataset.cvpGroup === key);
+          g.hidden = !show;
+          g.classList.toggle('hidden', !show);
+        });
+        buttons.forEach(b => {
+          const is = b.dataset.cvpTarget === key;
+          b.setAttribute('aria-selected', is ? 'true' : 'false');
+          b.classList.toggle('bg-white', is);
+          b.classList.toggle('text-gray-900', is);
+          b.classList.toggle('shadow-sm', is);
+          b.classList.toggle('ring-1', is);
+          b.classList.toggle('ring-black/5', is);
+          b.classList.toggle('text-gray-600', !is);
+        });
+      }
+      buttons.forEach(b => b.addEventListener('click', () => setActive(b.dataset.cvpTarget)));
+      setActive('overall');
+
+      // Mixed modal logic
+      const mixedCard = document.getElementById('rbt-mixed-card');
+      const mixedModal = document.getElementById('mixed-modal');
+      const closeEls = document.querySelectorAll('[data-close="mixed"]');
+      function openModal(){ mixedModal.classList.remove('hidden'); }
+      function closeModal(){ mixedModal.classList.add('hidden'); }
+      mixedCard && mixedCard.addEventListener('click', openModal);
+      mixedCard && mixedCard.addEventListener('keydown', (e)=>{
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(); }
+      });
+      closeEls.forEach(el => el.addEventListener('click', closeModal));
+      document.addEventListener('keydown', (e)=>{
+        if (e.key === 'Escape' && !mixedModal.classList.contains('hidden')) closeModal();
+      });
+
+      // Market modal logic
+      const marketCard = document.getElementById('rbt-market-card');
+      const marketModal = document.getElementById('market-modal');
+      const marketCloseEls = document.querySelectorAll('[data-close="market"]');
+      function openMarket(){ marketModal.classList.remove('hidden'); }
+      function closeMarket(){ marketModal.classList.add('hidden'); }
+      marketCard && marketCard.addEventListener('click', openMarket);
+      marketCard && marketCard.addEventListener('keydown', (e)=>{
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openMarket(); }
+      });
+      marketCloseEls.forEach(el => el.addEventListener('click', closeMarket));
+      document.addEventListener('keydown', (e)=>{
+        if (e.key === 'Escape' && !marketModal.classList.contains('hidden')) closeMarket();
+      });
+
+      // Firm modal logic
+      const firmCard = document.getElementById('rbt-firm-card');
+      const firmModal = document.getElementById('firm-modal');
+      const firmCloseEls = document.querySelectorAll('[data-close="firm"]');
+      function openFirm(){ firmModal.classList.remove('hidden'); }
+      function closeFirm(){ firmModal.classList.add('hidden'); }
+      firmCard && firmCard.addEventListener('click', openFirm);
+      firmCard && firmCard.addEventListener('keydown', (e)=>{
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openFirm(); }
+      });
+      firmCloseEls.forEach(el => el.addEventListener('click', closeFirm));
+      document.addEventListener('keydown', (e)=>{
+        if (e.key === 'Escape' && !firmModal.classList.contains('hidden')) closeFirm();
+      });
+
+      // PoD modal logic
+      const podCard = document.getElementById('pod-card');
+      const podModal = document.getElementById('pod-modal');
+      const podCloseEls = document.querySelectorAll('[data-close="pod"]');
+      function openPod(){ podModal.classList.remove('hidden'); }
+      function closePod(){ podModal.classList.add('hidden'); }
+      podCard && podCard.addEventListener('click', openPod);
+      podCard && podCard.addEventListener('keydown', (e)=>{
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPod(); }
+      });
+      podCloseEls.forEach(el => el.addEventListener('click', closePod));
+      document.addEventListener('keydown', (e)=>{
+        if (e.key === 'Escape' && !podModal.classList.contains('hidden')) closePod();
+      });
+
+      // PoP modal logic
+      const popCard = document.getElementById('pop-card');
+      const popModal = document.getElementById('pop-modal');
+      const popCloseEls = document.querySelectorAll('[data-close="pop"]');
+      function openPop(){ popModal.classList.remove('hidden'); }
+      function closePop(){ popModal.classList.add('hidden'); }
+      popCard && popCard.addEventListener('click', openPop);
+      popCard && popCard.addEventListener('keydown', (e)=>{
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPop(); }
+      });
+      popCloseEls.forEach(el => el.addEventListener('click', closePop));
+      document.addEventListener('keydown', (e)=>{
+        if (e.key === 'Escape' && !popModal.classList.contains('hidden')) closePop();
+      });
+    })();
+  </script>
+</body>
+</html>
