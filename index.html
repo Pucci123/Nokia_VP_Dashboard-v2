@@ -416,7 +416,10 @@
     <!-- Sales Handbook Analysis (before Recommendations) -->
     <section>
       <article class="bg-white rounded-2xl shadow-sm ring-1 ring-black/5 transition hover:shadow-md p-6">
-        <h2 class="text-xl font-semibold tracking-tight">Nokia Sales Brief Value Propositions Insight</h2>
+        <div class="flex items-center justify-between gap-2">
+          <h2 class="text-xl font-semibold tracking-tight">Nokia Sales Brief Value Propositions Insight</h2>
+          <button id="sales-info-button" type="button" class="shrink-0 inline-flex items-center gap-1 text-xs px-2 py-1 rounded-md bg-indigo-50 text-indigo-700 hover:bg-indigo-100" aria-haspopup="dialog" aria-controls="sales-info-modal" title="Info">Info</button>
+        </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-3">
           <!-- CVP Signals -->
           <div>
@@ -750,6 +753,20 @@
       </div>
     </div>
   </div>
+  <!-- Sales Info Modal -->
+  <div id="sales-info-modal" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="sales-info-modal-title">
+    <div class="fixed inset-0 bg-black/40" data-close="sales-info"></div>
+    <div class="relative mx-auto my-8 max-w-md bg-white rounded-2xl shadow-2xl ring-1 ring-black/10 flex flex-col max-h-[85vh]">
+      <div class="flex items-center justify-between p-4 border-b">
+        <h3 id="sales-info-modal-title" class="text-lg font-semibold">Info</h3>
+        <button type="button" class="h-8 w-8 inline-flex items-center justify-center rounded-md text-gray-600 hover:bg-gray-100" data-close="sales-info" aria-label="Close">✕</button>
+      </div>
+      <div class="p-5 text-xs leading-5 text-gray-700 overflow-y-auto">
+        <p>All internal information and documents are processed using a locally hosted AI system to ensure no data is shared with external parties.</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Sources Coverage Modal -->
   <div id="sources-modal" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="sources-modal-title">
     <div class="fixed inset-0 bg-black/40" data-close="sources"></div>
@@ -883,6 +900,21 @@
       sourcesCloseEls.forEach(el => el.addEventListener('click', closeSources));
       document.addEventListener('keydown', (e)=>{
         if (e.key === 'Escape' && !sourcesModal.classList.contains('hidden')) closeSources();
+      });
+
+      // Sales info modal logic
+      const salesInfoButton = document.getElementById('sales-info-button');
+      const salesInfoModal = document.getElementById('sales-info-modal');
+      const salesInfoCloseEls = document.querySelectorAll('[data-close="sales-info"]');
+      function openSalesInfo(){ salesInfoModal.classList.remove('hidden'); }
+      function closeSalesInfo(){ salesInfoModal.classList.add('hidden'); }
+      salesInfoButton && salesInfoButton.addEventListener('click', openSalesInfo);
+      salesInfoButton && salesInfoButton.addEventListener('keydown', (e)=>{
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSalesInfo(); }
+      });
+      salesInfoCloseEls.forEach(el => el.addEventListener('click', closeSalesInfo));
+      document.addEventListener('keydown', (e)=>{
+        if (e.key === 'Escape' && !salesInfoModal.classList.contains('hidden')) closeSalesInfo();
       });
     })();
   </script>
